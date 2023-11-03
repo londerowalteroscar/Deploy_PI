@@ -23,8 +23,9 @@ app = FastAPI()
 # Crear punto de entreada o endpoint:
 @app.get("/", tags=["Bienvenida"]) 
 def mensaje():
-    content = "<h2> Bienvenido al PI_MLOps_Engineer con <a href='http://127.0.0.1:8000/docs' > FastAPI </a> </h2>"
+    content = "<h2> Bienvenido al PI_MLOps_Engineer local con <a href='http://127.0.0.1:8000/docshttps://deploy-pi-asi7.onrender.com/docs' > FastAPI </a> </h2>"
     return HTMLResponse(content=content)
+
 
 """
 1 - def PlayTimeGenre( genero : str ): Debe devolver anio con mas horas jugadas para dicho género.
